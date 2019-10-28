@@ -60,7 +60,18 @@ nav.forEach( curr => {
 })
 
 
+const parent = document.querySelector('nav');
+
+const newLink = document.createElement('a');
+newLink.textContent = 'First';
+parent.prepend(newLink);
+
+const newLastLink = document.createElement('a');
+newLastLink.textContent = 'Last';
+parent.append(newLastLink);
+
 nav.forEach(item => item.style.color = 'green');
+
 
 
 
